@@ -30,7 +30,7 @@ function submitForm(event){
     console.log(totalSalaries);
     let monthlyTotal = equateMonthly();
     document.querySelector('#monthly').innerHTML = monthlyTotal;
-    redSalary(monthlyTotal)
+    redSalary(monthlyTotal);
     }
 
     function clearInputs(){
@@ -40,10 +40,10 @@ function submitForm(event){
     function equateMonthly(){
         let monthly = 0;
         for (let i = 0; i < totalSalaries.length; i++){
-            monthly += totalSalaries[i] / 12
+            monthly += totalSalaries[i] / 12;
         }
         console.log(monthly.toFixed(2));
-        return "Monthly Total:" , monthly
+        return "Monthly Total:" , monthly;
     }
 
     function redSalary(monthly){
