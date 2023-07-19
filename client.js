@@ -11,7 +11,6 @@ function submitForm(event){
     let title = document.getElementById('title').value;
     let salary = Number(document.getElementById('salary').value);
 
-    // let deleteButton = `<button id="delete" onclick="removeRow(${salary})">Delete</button>`;
     let employees = document.getElementById('employeeList');
 
     employees.innerHTML += `
@@ -44,7 +43,7 @@ function submitForm(event){
             monthly += totalSalaries[i] / 12
         }
         console.log(monthly.toFixed(2));
-        return monthly
+        return "Monthly Total:" , monthly
     }
 
     function redSalary(monthly){
